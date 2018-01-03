@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vuetify Parallax Starter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="app">
+    <!-- class="customClass" -->
+    <div style="display: flex; justify-content: space-between">
+      <v-toolbar id="navBar">
+        <v-toolbar-title>
+          <span id="navTextColor">
+        <strong >Katija Cvisic</strong>
+        </span>
+        </v-toolbar-title>
+        <v-spacer></v-spacer>
+        <span style="display:inline-flex">
+          <router-link class="routes" to="/">
+            <strong>Home</strong>
+          </router-link>
+              <v-spacer style="margin: 5px;"></v-spacer>
+            <router-link  class="routes" to="/portfolio">
+              <strong>Portfoilo</strong>
+            </router-link>
+            <v-spacer style="margin: 5px;"></v-spacer>
+            <router-link class="routes" to="/contact">
+              <strong>Contact</strong>
+            </router-link>
+          </span>
+      </v-toolbar>
+    </div>
+    <v-container>
+      <v-layout>
+        <v-flex xs12 sm6 offset-xs-4>
+
+          <router-view></router-view>
+        </v-flex>
+        <v-flex xs5 offset-xs2>
+          <v-card>
+            <v-toolbar id="connectNavBar">
+              <v-toolbar-title>
+                <div>
+                  <v-btn @click="show2 = !show2">
+                    <span id="navTextColor">
+                      <strong >Connect</strong>
+                     </span>
+                  </v-btn>
+                  <transition name="custom-classes-transition" enter-active-class="animated tada" leave-active-class="animated bounceOutRight">
+                    <p v-if="show2" id="hello"><strong>Hello!!</strong></p>
+                  </transition>
+                </div>
+              </v-toolbar-title>
+            </v-toolbar>
+            <div>
+              <v-container fluid id="connect">
+                <v-layout>
+                  <v-flex>
+                    <v-card style="display: flex; justify-content:space-evenly">
+                      <a href="https://www.linkedin.com/in/katija-cvisic-8671b025/">
+                    <img src="assets/images/linkedin-sign.svg"  class="icons"/></a>
+                      <a href="https://github.com/kcvisic">
+                      <img src="assets/images/github (1).svg"  class="icons"/></a>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+
+            </div>
+          </v-card>
+        </v-flex>
+
+      </v-layout>
+    </v-container>
+
+
+    <v-footer class="pa-3" fixed="fixed" id="footer">
+      <v-spacer></v-spacer>
+      <div>© {{ new Date().getFullYear() }}</div>
+    </v-footer>
+
+  </div>
+</body>
+
+</html>
+
+
+<script src="https://vuejs.org/js/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+<script src="assets/js/index.js"></script>

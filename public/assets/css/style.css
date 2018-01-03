@@ -1,0 +1,89 @@
+
+html {
+/*background-color: #F2F5EA;*/
+margin: 0 auto;
+  background: url("../images/background.png");
+
+}
+#navBar{
+    /*background-color:#424242;*/
+    background-color: #2E4052;
+}
+.routes{
+  color:#FFC857;
+  float:right;
+}
+#AboutBtn {
+  margin-top: 20px;
+  background-color: #2E4052;
+  color: #FFC857;
+}
+
+.background {
+  outline: #2e4052bd dotted thick;
+  box-shadow: #2E4052 5px 5px
+
+}
+
+#routesStyle{
+  float: right;
+  justify-content: space-between;
+}
+#connect {
+  box-shadow: #2e4052bd 5px 5px;
+
+}
+#connectNavBar{
+    background-color: #2E4052;
+
+    /*#495159;*/
+}
+#navTextColor {
+  color: #FFC857;
+}
+
+#hello {
+  color:#FFC857;
+}
+
+#footer{
+    background-color: #2E4052;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 15px;
+  opacity:0.6
+
+}
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.customClass:hover {
+  transform: scale(2.0);
+}
+.customClassImg:hover {
+  opacity:0.6
+}
+.customClassImg {
+  transition: all 0.2s;
+}
