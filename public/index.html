@@ -24,60 +24,64 @@
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <span style="display:inline-flex">
-          <router-link class="routes" to="/">
+          <router-link class="btn btn-flat" to="/">
             <strong>Home</strong>
           </router-link>
               <v-spacer style="margin: 5px;"></v-spacer>
-            <router-link  class="routes" to="/portfolio">
+            <router-link  class="btn btn-flat" to="/portfolio">
               <strong>Portfoilo</strong>
             </router-link>
             <v-spacer style="margin: 5px;"></v-spacer>
-            <router-link class="routes" to="/contact">
+            <router-link class="btn btn-flat" to="/contact">
               <strong>Contact</strong>
             </router-link>
           </span>
       </v-toolbar>
     </div>
-    <v-container>
-      <v-layout>
-        <v-flex xs12 sm6 offset-xs-4>
 
+    <v-container>
+      <v-layout >
+        <v-spacer xs2></v-spacer>
+        <v-flex xs8>
           <router-view></router-view>
         </v-flex>
-        <v-flex xs5 offset-xs2>
+        <v-spacer xs2></v-spacer>
+      </v-layout>
+    </v-container>
+
+    <v-container>
+      <v-layout>
+        <v-spacer xs2></v-spacer>
+        <v-flex xs8>
           <v-card>
             <v-toolbar id="connectNavBar">
               <v-toolbar-title>
-                <div>
-                  <v-btn @click="show2 = !show2">
-                    <span id="navTextColor">
-                      <strong >Connect</strong>
-                     </span>
-                  </v-btn>
-                  <transition name="custom-classes-transition" enter-active-class="animated tada" leave-active-class="animated bounceOutRight">
-                    <p v-if="show2" id="hello"><strong>Hello!!</strong></p>
-                  </transition>
-                </div>
+                  <span id="navTextColor"><strong >Connect</strong></span>
               </v-toolbar-title>
             </v-toolbar>
-            <div>
-              <v-container fluid id="connect">
+              <v-container elevation-24 style="margin-bottom:30px;">
                 <v-layout>
-                  <v-flex>
-                    <v-card style="display: flex; justify-content:space-evenly">
+                  <v-spacer xs4></v-spacer>
+                  <v-flex justify-content center>
+                    <div style="display: flex; justify-content:center;">
                       <a href="https://www.linkedin.com/in/katija-cvisic-8671b025/">
-                    <img src="assets/images/linkedin-sign.svg"  class="icons"/></a>
-                      <a href="https://github.com/kcvisic">
-                      <img src="assets/images/github (1).svg"  class="icons"/></a>
-                    </v-card>
+                        <img src="assets/images/linkedin-sign.svg"  class="icons"/>
+                      </a>
+                    </div>
                   </v-flex>
+                  <v-flex>
+                      <div style="display: flex; justify-content:center;">
+                        <a href="https://github.com/kcvisic">
+                          <img src="assets/images/github (1).svg"  class="icons"/>
+                        </a>
+                      </div>
+                  </v-flex>
+                  <v-spacer xs4></v-spacer>
                 </v-layout>
               </v-container>
-
-            </div>
           </v-card>
         </v-flex>
-
+        <v-spacer xs2></v-spacer>
       </v-layout>
     </v-container>
 

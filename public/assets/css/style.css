@@ -5,6 +5,7 @@ margin: 0 auto;
   background: url("../images/background.png");
 
 }
+
 #navBar{
     /*background-color:#424242;*/
     background-color: #2E4052;
@@ -14,15 +15,17 @@ margin: 0 auto;
   float:right;
 }
 #AboutBtn {
-  margin-top: 20px;
+
   background-color: #2E4052;
   color: #FFC857;
 }
-
+#contactToolbar{
+  margin-top: 20px
+}
 .background {
-  outline: #2e4052bd dotted thick;
-  box-shadow: #2E4052 5px 5px
-
+  /* outline: #2e4052bd dotted thick; */
+  /* box-shadow: #2E4052 5px 5px; */
+  background-color: #efefef;
 }
 
 #routesStyle{
@@ -45,11 +48,18 @@ margin: 0 auto;
 #hello {
   color:#FFC857;
 }
-
+.btn {
+    color:#FFC857;
+}
 #footer{
     background-color: #2E4052;
+    margin-top: 20px;
+    padding-top: 20px;
 }
-
+#aboutPortfolio{
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
 .icons {
   width: 40px;
   height: 40px;
@@ -82,8 +92,20 @@ margin: 0 auto;
   transform: scale(2.0);
 }
 .customClassImg:hover {
-  opacity:0.6
+  opacity: .6;
 }
 .customClassImg {
+  /* opacity: .6; */
   transition: all 0.2s;
+}
+
+.about-me:first-child:first-letter {
+  color: #2e4053;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
 }
