@@ -60,14 +60,18 @@ margin: 0 auto;
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
-.icons {
+.icons{
   width: 40px;
   height: 40px;
   margin-left: 10px;
   border-radius: 15px;
-  opacity:0.6
+  opacity:0.7;
 
 }
+.icons:hover{
+  opacity: 0.4;
+}
+
 .bounce-enter-active {
   animation: bounce-in .5s;
 }
