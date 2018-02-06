@@ -60,16 +60,16 @@ const Portfolio = {
         show:false,
 
         githubLinks:[
+          "https://github.com/kcvisic/All-Ears-",
           "https://github.com/kcvisic/week-4-game",
-          "https://github.com/kcvisic/Friend-Finder",
           "https://github.com/kcvisic/Burger",
           "https://github.com/kcvisic/Recipes",
           "https://github.com/kcvisic/Trivia-Game",
           "https://github.com/kcvisic/Hangman-Game",
         ],
         discription:[
+          "Acoustic Chat Rooms",
           "Match a Winning Number",
-          "FriendFinder Survay",
           "Create your own Burger",
           "Recipe Creation Application",
           "Guess a Super Hero's Secret Identity",
@@ -79,8 +79,8 @@ const Portfolio = {
         ],
 
         title:[
+          "All Ears",
           "GemGame",
-          "FriendFinder",
           "Eat Da Burger",
           "Service",
           "TriviaGame",
@@ -89,16 +89,16 @@ const Portfolio = {
         ],
 
           images:[
+            "assets/images/all-ears.png",
             "assets/images/GemGame.png",
-            "assets/images/FriendFinder.png",
             "assets/images/Burger.jpg",
             "assets/images/recipe.png",
             "assets/images/TriviaGame.png",
             "assets/images/Hangman.png",
           ],
           links: [
+            "https://all-ears.herokuapp.com/",
             "https://gem-game.herokuapp.com/",
-            "https://f-rend-finder.herokuapp.com/",
             "https://burger-eat-the-burger.herokuapp.com/",
             "https://recipes-service-.herokuapp.com/",
             "https://trivia-superhero-secret-identy.herokuapp.com/",
@@ -107,7 +107,7 @@ const Portfolio = {
 
           ],
           technology:[
-            "Technology used: Javacript, JQuery, Bootstrap, NodeJS",
+            "Technology used: Javacript, reactJS, MySQL, Sequelize, Bootstrap, NodeJS, Express, YouTube API",
             "Technology used: Javacript, JQuery, Bootstrap, NodeJS",
             "Technology used: Javacript, JQuery, Bootstrap, NodeJS, Express, MySQL, Sequelize, Handlebars",
             "Technology used: Javacript, JQuery, NodeJS, Express, MySQL, Sequelize, Vue.js, Vuetify.js",
