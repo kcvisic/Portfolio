@@ -100,9 +100,9 @@ const Portfolio = {
             "https://all-ears.herokuapp.com/",
             "https://gem-game.herokuapp.com/",
             "https://burger-eat-the-burger.herokuapp.com/",
-            "https://recipes-service-.herokuapp.com/",
+            "https://recipes-service-kc.herokuapp.com/",
             "https://trivia-superhero-secret-identy.herokuapp.com/",
-            "https://hangman-game-.herokuapp.com/",
+            "https://hangman-game-kc.herokuapp.com/",
 
 
           ],
