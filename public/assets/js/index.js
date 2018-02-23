@@ -8,15 +8,15 @@ const Portfolio = {
 
     <v-layout elevation-24>
        <v-flex xs12>
-         <v-card class="white">
-           <v-container fluid :grid-list-md = "true" elevation-24>
+         <v-card class="gray" id="whiteCard">
+           <v-container fluid :grid-list-md = "true" elevation-24 >
              <v-layout row wrap>
                <v-flex
                  sm6
                  v-for="(i, index) in images"
                  :key="i"
                >
-                 <v-card tile style="margin:15px">
+                 <v-card tile style="margin:15px" style="color:white">
                    <v-card-media
                     :src="i"
                      height="150px"
@@ -24,11 +24,11 @@ const Portfolio = {
                     @click.native="openLinks(links[index])"
                    >
 
-                   </v-card-media>
-                   <v-card-title primary-title>
+                   </v-card-media >
+                   <v-card-title primary-title style="background-color:#cdd9c4">
                      <div>
-                       <div class="headline">{{title[index]}}</div>
-                       <span class="grey--text">{{discription[index]}}</span>
+                       <div class="headline" style="color:black">{{title[index]}}</div>
+                       <span class="black--text">{{discription[index]}}</span>
                      </div>
                    </v-card-title>
                    <v-card-actions class="white">
@@ -172,8 +172,8 @@ const Home = {template: `
   <v-container elevation-24>
 
   <v-card class="background">
-    <v-avatar size="100px" style="display: flex;margin: auto; padding-top: 20px;">
-      <img src="assets/images/profile.jpg"></img>
+    <v-avatar id="mainPhoto" style="display: flex;margin: auto; padding-top: 20px">
+      <img src="assets/images/profilePicture.PNG"></img>
     </v-avatar>
 
     <v-card-title primary-title>

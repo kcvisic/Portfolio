@@ -2,8 +2,21 @@
 html {
 /*background-color: #F2F5EA;*/
 margin: 0 auto;
-  background: url("../images/background.png");
+  background: url("../images/brainTree 2.jpg")
+  no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 100%;
 
+}
+#whiteCard{
+  
+}
+#mainPhoto {
+  height: 200px !important;
+  width:auto !important;
 }
 
 #navBar{
